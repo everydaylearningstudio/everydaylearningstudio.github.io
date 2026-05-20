@@ -94,7 +94,7 @@
     </header>
 
     <h2>Overview</h2>
-    <p>Daily Brain Teaser is a local-first brain teaser app. The app is designed to work without an account, backend account system, cloud sync, ads, analytics SDK, or third-party tracking SDK in the current release.</p>
+    <p>Daily Brain Teaser is a local-first brain teaser app. The app works without an account, backend account system, cloud sync, ads, or analytics SDK in the current release. The app does use Firebase Crashlytics to collect crash diagnostics so stability issues can be found and fixed (see "Crash Diagnostics" below).</p>
 
     <h2>Information Stored On Your Device</h2>
     <p>Daily Brain Teaser stores app data locally on your device so the app can remember your progress and settings. This local data may include:</p>
@@ -118,10 +118,20 @@
     <p>The current release does not include account creation, login, or cloud sync. Progress is local to the device and app installation.</p>
 
     <h2>Ads, Analytics, And Tracking</h2>
-    <p>The current release does not include ads. The current release does not include an analytics SDK. The current release does not include third-party tracking SDKs.</p>
+    <p>The current release does not include ads. The current release does not include a product analytics SDK. The current release does not include advertising or marketing tracking SDKs. The only third-party SDK that processes data is Firebase Crashlytics, described in "Crash Diagnostics" below.</p>
+
+    <h2>Crash Diagnostics</h2>
+    <p>Daily Brain Teaser uses Firebase Crashlytics (a Google service) to automatically collect crash and error reports so we can find and fix stability problems. When the app crashes or records an error, Crashlytics may collect:</p>
+    <ul>
+        <li>a stack trace describing where the error happened</li>
+        <li>device model and operating system version</li>
+        <li>app version</li>
+        <li>a Crashlytics installation identifier associated with the report</li>
+    </ul>
+    <p>Crashlytics does not collect the contents of your puzzle progress, archive, or settings. Crash data is processed by Google as part of the Firebase Crashlytics service. For information about how Google handles this data, see <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
 
     <h2>Data Sharing</h2>
-    <p>The current release does not send app progress, archive, reminder settings, or stats to a developer backend. Spoiler-free result sharing uses the Android share sheet only when you choose to share.</p>
+    <p>The current release does not send app progress, archive, reminder settings, or stats to a developer backend. Crash diagnostics are shared with Google through Firebase Crashlytics as described above. Spoiler-free result sharing uses the Android share sheet only when you choose to share.</p>
 
     <h2>Data Retention And Deletion</h2>
     <p>Local app data remains on the device until you delete the app, clear app storage, or the app provides a future deletion option. Uninstalling the app or clearing app data through Android system settings removes local progress and settings from that device.</p>
@@ -136,7 +146,7 @@
     <p>For privacy questions, contact: <a href="mailto:everydaylearningstudio@gmail.com">everydaylearningstudio@gmail.com</a></p>
 
     <div class="note">
-        This Privacy Policy reflects the current release of Daily Brain Teaser, which is a local-first app with no account, no backend, no cloud sync, no ads, and no analytics SDK. If a future release adds advertising, analytics, crash reporting, or a backend, this policy and the Google Play Data Safety form will be updated before that release ships.
+        This Privacy Policy reflects the current release of Daily Brain Teaser, which is a local-first app with no account, no backend, no cloud sync, no ads, and no product analytics SDK. It uses Firebase Crashlytics for crash diagnostics only. If a future release adds advertising, product analytics, or a backend, this policy and the Google Play Data Safety form will be updated before that release ships.
     </div>
 
     <footer>
