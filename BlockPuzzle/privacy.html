@@ -1,112 +1,170 @@
----
-layout: default
-title: Privacy Policy
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Block Puzzle — Privacy Policy</title>
+<style>
+  :root {
+    --navy: #1E2147;
+    --navy-deep: #161734;
+    --gold: #C77E00;
+    --ink: #23262f;
+    --muted: #5b6072;
+    --line: #e4e6ee;
+    --bg: #f7f8fb;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+  header.banner {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 28px 24px;
+    margin-bottom: 28px;
+  }
+  header.banner h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: .2px; }
+  header.banner .meta { color: #c7cae6; font-size: 14px; margin: 2px 0; }
+  header.banner .meta a { color: #ffd93d; text-decoration: none; }
+  h2 {
+    font-size: 20px;
+    margin: 36px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--line);
+  }
+  p { margin: 12px 0; }
+  a { color: var(--gold); }
+  ul { margin: 12px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  strong { color: var(--navy); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 4px 20px 18px;
+    margin: 14px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th { background: #eef0f7; color: var(--navy); font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  .lead {
+    font-size: 18px;
+    background: #fff7e6;
+    border-left: 4px solid var(--gold);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+  }
+  footer {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .wrap { padding: 18px 14px 56px; }
+    header.banner { padding: 22px 18px; }
+    table { font-size: 14px; }
+    th, td { padding: 8px 9px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-# Privacy Policy
+  <header class="banner">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Block Puzzle (Android) · Every Day Learning Studio</p>
+    <p class="meta">Effective date: 2026-06-22</p>
+    <p class="meta">Contact: <a href="mailto:everydaylearningstudio@gmail.com">everydaylearningstudio@gmail.com</a></p>
+  </header>
 
-**Effective date:** 2026-06-22
-**App:** Block Puzzle (Android)
-**Studio:** Every Day Learning Studio
-**Contact:** [everydaylearningstudio@gmail.com](mailto:everydaylearningstudio@gmail.com)
+  <p class="lead">Block Puzzle does not collect, transmit, or share any personal data. Everything you do in the game stays on your device.</p>
 
-## Summary
+  <h2>Data we store on your device</h2>
+  <div class="card">
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Purpose</th><th>Where</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Game state (board, current pieces, score, moves)</td><td>Resume your game after closing the app</td><td>Local file (Android DataStore)</td></tr>
+      <tr><td>High score</td><td>Show your best result on the game-over screen</td><td>Local SQLite database (Room)</td></tr>
+      <tr><td>Statistics (games played, blocks placed, lines cleared, best combo)</td><td>Show your Statistics screen</td><td>Local file (Android DataStore)</td></tr>
+      <tr><td>Daily-challenge streak (current/best streak, last day completed)</td><td>Track your daily streak</td><td>Local file (Android DataStore)</td></tr>
+      <tr><td>Unlocked achievements</td><td>Show the Achievements screen</td><td>Local file (Android DataStore)</td></tr>
+      <tr><td>Sound + haptic preferences</td><td>Remember whether you turned sound/vibration off</td><td>Local files (Android DataStore)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>This data never leaves your device. We do not send it to any server, and we have no servers.</p>
 
-Block Puzzle does not collect, transmit, or share any personal data.
-Everything you do in the game stays on your device.
+  <h2>Data we do not collect</h2>
+  <p>We do <strong>not</strong> collect, log, or transmit:</p>
+  <ul>
+    <li>Personal identifiers (name, email, phone, etc.)</li>
+    <li>Device identifiers (advertising ID, IMEI, MAC address, etc.)</li>
+    <li>Usage analytics or telemetry</li>
+    <li>Location</li>
+    <li>Crash reports</li>
+    <li>Anything else</li>
+  </ul>
 
-## Data we store on your device
+  <h2>Third-party services</h2>
+  <p>Block Puzzle has <strong>no analytics, no advertising SDKs, no cloud sync, no accounts, and no crash reporting.</strong> We do not embed any third party that collects data about you for us.</p>
+  <p>The app does rely on two <strong>Google Play services</strong> that are part of Android. We don't receive any personal data through either; they are operated by Google under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>:</p>
+  <ul>
+    <li><strong>Google Play In-App Review</strong> — after several games the app may show Google's "rate this app" dialog. If you choose to rate, your rating goes to Google Play, not to us. We never learn whether you rated or what you rated.</li>
+    <li><strong>Downloadable Fonts (Google Play Services)</strong> — the game's display font (Russo One) is fetched once by Google Play Services and cached on your device. If you're offline, the app simply uses a built-in font instead.</li>
+  </ul>
+  <p>These services do the networking through Google Play Services, so Block Puzzle itself does not request the <code>INTERNET</code> permission.</p>
+  <p>If we add advertisements in a future version (Google AdMob is the likely candidate), we will update this policy to disclose what is shared with the ad network, request fresh consent under GDPR / CCPA where applicable, and ship a new app version.</p>
 
-| Data | Purpose | Where |
-|---|---|---|
-| Game state (board, current pieces, score, moves) | Resume your game after closing the app | Local file (Android DataStore) |
-| High score | Show your best result on the game-over screen | Local SQLite database (Room) |
-| Statistics (games played, blocks placed, lines cleared, best combo) | Show your Statistics screen | Local file (Android DataStore) |
-| Daily-challenge streak (current/best streak, last day completed) | Track your daily streak | Local file (Android DataStore) |
-| Unlocked achievements | Show the Achievements screen | Local file (Android DataStore) |
-| Sound + haptic preferences | Remember whether you turned sound/vibration off | Local files (Android DataStore) |
+  <h2>Permissions</h2>
+  <p>Block Puzzle declares one permission: <strong>VIBRATE</strong>, used for the optional haptic feedback on placements and clears (toggle it off in Settings → Audio). It is a normal, install-time permission and does not access any of your data. The app requests no runtime permissions.</p>
 
-This data never leaves your device. We do not send it to any server,
-and we have no servers.
+  <h2>Children</h2>
+  <p>Block Puzzle is suitable for users of all ages. Because the app collects no data, it complies with COPPA, GDPR-K, and equivalent regulations by default. There are no in-app purchases, no in-game advertising, and no account or profile creation. The only sharing feature is an optional "Share score" button that opens your device's standard share sheet with a short text — you choose whether and where to send it; the app sends nothing on its own.</p>
 
-## Data we do not collect
+  <h2>Your rights</h2>
+  <p>Because we don't collect any data, there is nothing for you to request, export, or delete on our side.</p>
+  <p>To wipe the data stored locally on your device:</p>
+  <ul>
+    <li>Uninstall the app, <strong>or</strong></li>
+    <li>Open <strong>Android Settings → Apps → Block Puzzle → Storage → Clear data</strong>, <strong>or</strong></li>
+    <li>Reset specific data from inside the app: <strong>Settings → Reset high score</strong> or <strong>Settings → Statistics → Reset statistics</strong>.</li>
+  </ul>
 
-We do **not** collect, log, or transmit:
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy, we will update the "Effective date" at the top of this page and bump the in-app version. Material changes — for example, adding advertising, analytics, or any form of data collection — will require explicit consent inside the app before they take effect.</p>
 
-- Personal identifiers (name, email, phone, etc.)
-- Device identifiers (advertising ID, IMEI, MAC address, etc.)
-- Usage analytics or telemetry
-- Location
-- Crash reports
-- Anything else
+  <h2>Contact</h2>
+  <p>Questions about this policy or the app's privacy practices: <a href="mailto:everydaylearningstudio@gmail.com">everydaylearningstudio@gmail.com</a></p>
 
-## Third-party services
+  <footer>© 2026 Every Day Learning Studio</footer>
 
-Block Puzzle has **no analytics, no advertising SDKs, no cloud sync, no
-accounts, and no crash reporting.** We do not embed any third party that
-collects data about you for us.
-
-The app does rely on two **Google Play services** that are part of
-Android. We don't receive any personal data through either; they are
-operated by Google under
-[Google's Privacy Policy](https://policies.google.com/privacy):
-
-- **Google Play In-App Review** — after several games the app may show
-  Google's "rate this app" dialog. If you choose to rate, your rating
-  goes to Google Play, not to us. We never learn whether you rated or
-  what you rated.
-- **Downloadable Fonts (Google Play Services)** — the game's display
-  font (Russo One) is fetched once by Google Play Services and cached on
-  your device. If you're offline, the app simply uses a built-in font
-  instead.
-
-These services do the networking through Google Play Services, so Block
-Puzzle itself does not request the `INTERNET` permission.
-
-If we add advertisements in a future version (Google AdMob is the likely
-candidate), we will update this policy to disclose what is shared with
-the ad network, request fresh consent under GDPR / CCPA where
-applicable, and ship a new app version.
-
-## Permissions
-
-Block Puzzle declares one permission: **`VIBRATE`**, used for the
-optional haptic feedback on placements and clears (toggle it off in
-Settings → Audio). It is a normal, install-time permission and does not
-access any of your data. The app requests no runtime permissions.
-
-## Children
-
-Block Puzzle is suitable for users of all ages. Because the app collects
-no data, it complies with COPPA, GDPR-K, and equivalent regulations by
-default. There are no in-app purchases, no in-game advertising, and no
-account or profile creation. The only sharing feature is an optional
-"Share score" button that opens your device's standard share sheet with
-a short text — you choose whether and where to send it; the app sends
-nothing on its own.
-
-## Your rights
-
-Because we don't collect any data, there is nothing for you to
-request, export, or delete on our side.
-
-To wipe the data stored locally on your device:
-
-- Uninstall the app, **or**
-- Open **Android Settings → Apps → Block Puzzle → Storage → Clear data**, **or**
-- Reset specific data from inside the app:
-  **Settings → Reset high score** or **Settings → Statistics → Reset
-  statistics**.
-
-## Changes to this policy
-
-If we change this policy, we will update the "Effective date" at the
-top of this page and bump the in-app version. Material changes — for
-example, adding advertising, analytics, or any form of data
-collection — will require explicit consent inside the app before
-they take effect.
-
-## Contact
-
-Questions about this policy or the app's privacy practices:
-[everydaylearningstudio@gmail.com](mailto:everydaylearningstudio@gmail.com)
+</div>
+</body>
+</html>
